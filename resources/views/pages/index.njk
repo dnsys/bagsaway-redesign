@@ -1,11 +1,63 @@
 {% extends "layouts/layout.njk" %}
 
 {% block content %}
-<div class="container">
-    CONTENT
+    <section class="section section--main" style="background-image: url(${require('assets/images/main-bg.jpg')});">
+        <div class="container">
+            <div class="filter-widget">
+                <div class="filter-widget__head">
+                    <span class="main-text">
+                        Find near-by, local storage for your luggage<br/>Just <strong>$1.50</strong>/hour
+                    </span>
+                    <span class="text-divider">or</span>
+                    <span class="sub-text">
+                        Try our <span class="underline-text">delivery service</span>, we come to you!
+                    </span>
+                </div>
+                <div class="filter-widget__body">
+                    <form action="">
 
-    <!-- EXAMPLE REQUIRE IMG -->
-    <img src="assets/images/square.png" alt="">
-    <div style="background-image: url(${require('assets/images/square3.png')}); height: 100px"></div>
-</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--slider">
+        <div class="section__title">
+            Store Your Luggage Here!
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="advantages-block">
+                        <div class="advantage-item advantage-item--main">
+                            <div class="advantage-item__icon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+                            <div class="advantage-item__name">Security<br/><span class="sub-text">Store luggage with peace of mind</span></div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="advantage-item__icon"><i class="fa fa-tags" aria-hidden="true"></i></div>
+                            <div class="advantage-item__name">Always sealed, <span class="selected-text">tagged & secured</span>!</div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="advantage-item__icon"><i class="fa fa-shield" aria-hidden="true"></i></div>
+                            <div class="advantage-item__name">1,200 damage and theft <span class="selected-text">insurance</span> per bag (up to $3000)</div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="advantage-item__icon"><i class="fa fa-comments" aria-hidden="true"></i></div>
+                            <div class="advantage-item__name">Chat & Phone Support always available</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="call-to-action">
+                <a href="#" class="call-to-action__link">
+                    Become Our Storage Partner!
+                </a>
+                <div class="call-to-action__description">
+                    List your space with us
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
